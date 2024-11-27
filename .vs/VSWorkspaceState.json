@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Kursach",
+    "\\Kursach\\Contexts",
+    "\\Kursach\\Controllers",
+    "\\Kursach\\DTOs",
+    "\\Kursach\\Exceptions",
+    "\\Kursach\\Interfaces",
+    "\\Kursach\\Models",
+    "\\Kursach\\Servises"
+  ],
+  "SelectedNode": "\\Kursach\\Interfaces",
+  "PreviewInSolutionExplorer": false
+}

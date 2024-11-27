@@ -1,0 +1,50 @@
+﻿using Kursach.Contexts;
+using Kursach.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Kursach.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class RestaurantsController : ControllerBase
+    {
+        private readonly RestaurantNetworkContext _context;
+
+        public RestaurantsController(RestaurantNetworkContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Restaurant>>> GetRestaurants()
+        {
+            return await _context.Restaurants.ToListAsync();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Restaurant>> CreateRestaurant(Restaurant restaurant)
+        {
+            _context.Restaurants.Add(restaurant);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetRestaurants), new { id = restaurant.Id }, restaurant);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteRestaurant(int id)
+        {
+            var restaurant = await _context.Restaurants.FindAsync(id);
+            if (restaurant == null)
+            {
+                return NotFound();
+            }
+
+            _context.Restaurants.Remove(restaurant);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+    }
+}

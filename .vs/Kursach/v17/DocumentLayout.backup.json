@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Kursach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\servises\\tokengeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\servises\\tokengeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\servises\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\servises\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\tablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\tablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\restaurantnetworkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\restaurantnetworkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\kursach.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\kursach.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|c:\\users\\user\\desktop\\kursach\\kursach\\kursach.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81272CE7-1C1D-4EBB-A9DA-C9F9CEDC21E0}|Kursach\\Kursach.csproj|solutionrelative:kursach\\kursach.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:21:33.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TablesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\TablesController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\TablesController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\TablesController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\TablesController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwDIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:25:09.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\LoginDto.cs",
+              "RelativeToolTip": "Kursach\\Models\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:49:14.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenGeneratorService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Servises\\TokenGeneratorService.cs",
+              "RelativeDocumentMoniker": "Kursach\\Servises\\TokenGeneratorService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Servises\\TokenGeneratorService.cs",
+              "RelativeToolTip": "Kursach\\Servises\\TokenGeneratorService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:04:36.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Servises\\UserService.cs",
+              "RelativeDocumentMoniker": "Kursach\\Servises\\UserService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Servises\\UserService.cs",
+              "RelativeToolTip": "Kursach\\Servises\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:35:56.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:10:32.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\RestaurantsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:19:32.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\ReservationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:27:31.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Kursach\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Kursach\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:24:36.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Product.cs",
+              "RelativeToolTip": "Kursach\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:14:41.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\User.cs",
+              "RelativeToolTip": "Kursach\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:13:50.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Table.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\Table.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Table.cs",
+              "RelativeToolTip": "Kursach\\Models\\Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:14:54.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Program.cs",
+              "RelativeDocumentMoniker": "Kursach\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Program.cs",
+              "RelativeToolTip": "Kursach\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwA0AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:12:16.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RestaurantNetworkContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\RestaurantNetworkContext.cs",
+              "RelativeDocumentMoniker": "Kursach\\RestaurantNetworkContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\RestaurantNetworkContext.cs",
+              "RelativeToolTip": "Kursach\\RestaurantNetworkContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:15:59.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\appsettings.json",
+              "RelativeDocumentMoniker": "Kursach\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\appsettings.json",
+              "RelativeToolTip": "Kursach\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T16:44:30.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\Reservation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Reservation.cs",
+              "RelativeToolTip": "Kursach\\Models\\Reservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:15:19.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\Staff.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Staff.cs",
+              "RelativeToolTip": "Kursach\\Models\\Staff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:14:27.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Kursach.http",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Kursach.http",
+              "RelativeDocumentMoniker": "Kursach\\Kursach.http",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Kursach.http",
+              "RelativeToolTip": "Kursach\\Kursach.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-04T16:46:37.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Kursach\\Models\\Restaurant.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Models\\Restaurant.cs",
+              "RelativeToolTip": "Kursach\\Models\\Restaurant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:14:07.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Kursach\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\appsettings.Development.json",
+              "RelativeToolTip": "Kursach\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-09T17:05:42.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Kursach.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Kursach.csproj",
+              "RelativeDocumentMoniker": "Kursach\\Kursach.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Kursach\\Kursach\\Kursach.csproj",
+              "RelativeToolTip": "Kursach\\Kursach.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-04T16:15:54.228Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
