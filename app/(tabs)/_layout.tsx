@@ -31,6 +31,13 @@ export default function TabsLayout() {
           tabBarIcon: ({ color, size }) => <Octicons name="person" color={color} size={size} />,
         }}
       />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Настройки",
+          tabBarIcon: ({ color, size }) => <Octicons name="gear" color={color} size={size} />,
+        }}
+      />
     </Tabs>
   )
 }
