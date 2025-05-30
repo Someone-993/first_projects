@@ -1,6 +1,9 @@
+"use client"
+
 import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity, ActivityIndicator } from "react-native"
 import { Octicons } from "@expo/vector-icons"
-import { useLocalSearchParams } from "expo-router"
+import { useLocalSearchParams, router } from "expo-router"
+import { useTheme } from "../../contexts/ThemeContext"
 
 interface GitHubUser {
   id: number
@@ -16,6 +19,7 @@ interface SearchResults {
 }
 
 export default function ResultsScreen() {
+  const { colors } = useTheme()
   const { results: resultsParam, searchTerm } = useLocalSearchParams<{
     results: string
     searchTerm: string
@@ -31,39 +35,54 @@ export default function ResultsScreen() {
     console.error("Failed to parse results:", error)
   }
 
+  const handleViewProfile = (user: GitHubUser) => {
+    router.push({
+      pathname: "/search/profile",
+      params: {
+        userLogin: user.login,
+        userAvatar: user.avatar_url,
+        userType: user.type,
+        userId: user.id.toString(),
+      },
+    })
+  }
+
   if (!results || !results.items) {
     return (
-      <View style={styles.centered}>
-        <ActivityIndicator size="large" color="#2196F3" />
+      <View style={[styles.centered, { backgroundColor: colors.background }]}>
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
     )
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.searchInfo}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={[styles.header, { backgroundColor: colors.surface, borderBottomColor: colors.border }]}>
+        <Text style={[styles.searchInfo, { color: colors.textSecondary }]}>
           Найдено {results.total_count} пользователей по запросу "{searchTerm}"
         </Text>
       </View>
 
       {results.items.length === 0 ? (
-        <View style={styles.emptyContainer}>
-          <Octicons name="search" size={50} color="#BDBDBD" />
-          <Text style={styles.emptyText}>Пользователи не найдены</Text>
+        <View style={[styles.emptyContainer, { backgroundColor: colors.background }]}>
+          <Octicons name="search" size={50} color={colors.textSecondary} />
+          <Text style={[styles.emptyText, { color: colors.textSecondary }]}>Пользователи не найдены</Text>
         </View>
       ) : (
         <FlatList
           data={results.items}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
-            <View style={styles.userCard}>
+            <View style={[styles.userCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
               <Image source={{ uri: item.avatar_url }} style={styles.avatar} />
               <View style={styles.userInfo}>
-                <Text style={styles.username}>{item.login}</Text>
-                <Text style={styles.userType}>{item.type}</Text>
+                <Text style={[styles.username, { color: colors.text }]}>{item.login}</Text>
+                <Text style={[styles.userType, { color: colors.textSecondary }]}>{item.type}</Text>
               </View>
-              <TouchableOpacity style={styles.viewButton}>
+              <TouchableOpacity
+                style={[styles.viewButton, { backgroundColor: colors.primary }]}
+                onPress={() => handleViewProfile(item)}
+              >
                 <Text style={styles.viewButtonText}>Просмотр</Text>
               </TouchableOpacity>
             </View>
@@ -78,7 +97,6 @@ export default function ResultsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5F5",
   },
   centered: {
     flex: 1,
@@ -87,13 +105,10 @@ const styles = StyleSheet.create({
   },
   header: {
     padding: 15,
-    backgroundColor: "#FFFFFF",
     borderBottomWidth: 1,
-    borderBottomColor: "#E0E0E0",
   },
   searchInfo: {
     fontSize: 16,
-    color: "#616161",
   },
   listContent: {
     padding: 10,
@@ -101,11 +116,11 @@ const styles = StyleSheet.create({
   userCard: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#FFFFFF",
     borderRadius: 8,
     padding: 15,
     marginBottom: 10,
     elevation: 2,
+    borderWidth: 1,
   },
   avatar: {
     width: 50,
@@ -119,15 +134,12 @@ const styles = StyleSheet.create({
   username: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#333333",
   },
   userType: {
     fontSize: 14,
-    color: "#757575",
     marginTop: 2,
   },
   viewButton: {
-    backgroundColor: "#2196F3",
     paddingVertical: 8,
     paddingHorizontal: 15,
     borderRadius: 4,
@@ -144,7 +156,6 @@ const styles = StyleSheet.create({
   },
   emptyText: {
     fontSize: 18,
-    color: "#757575",
     marginTop: 10,
   },
 })

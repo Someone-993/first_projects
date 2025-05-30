@@ -1,18 +1,24 @@
+"use client"
+
 import { Tabs } from "expo-router"
 import { Octicons } from "@expo/vector-icons"
+import { useTheme } from "../contexts/ThemeContext"
 
 export default function TabsLayout() {
+  const { colors, isDark } = useTheme()
+
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#2196F3",
-        tabBarInactiveTintColor: "#757575",
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.textSecondary,
         tabBarStyle: {
-          backgroundColor: "#FFFFFF",
+          backgroundColor: colors.surface,
           elevation: 8,
           paddingTop: 5,
           paddingBottom: 5,
           height: 60,
+          borderTopColor: colors.border,
         },
       }}
     >
@@ -22,13 +28,6 @@ export default function TabsLayout() {
           title: "Поиск",
           headerShown: false,
           tabBarIcon: ({ color, size }) => <Octicons name="search" color={color} size={size} />,
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Профиль",
-          tabBarIcon: ({ color, size }) => <Octicons name="person" color={color} size={size} />,
         }}
       />
       <Tabs.Screen

@@ -14,8 +14,10 @@ import {
 } from "react-native"
 import { Octicons } from "@expo/vector-icons"
 import { router } from "expo-router"
+import { useTheme } from "../../contexts/ThemeContext"
 
 export default function SearchScreen() {
+  const { colors } = useTheme()
   const [username, setUsername] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
@@ -50,20 +52,24 @@ export default function SearchScreen() {
   }
 
   return (
-    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+    <KeyboardAvoidingView
+      style={[styles.container, { backgroundColor: colors.background }]}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
       <View style={styles.content}>
         <Image
           source={{ uri: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" }}
           style={styles.logo}
         />
 
-        <Text style={styles.title}>Поиск пользователей GitHub</Text>
+        <Text style={[styles.title, { color: colors.text }]}>Поиск пользователей GitHub</Text>
 
-        <View style={styles.inputContainer}>
-          <Octicons name="search" size={20} color="#757575" style={styles.inputIcon} />
+        <View style={[styles.inputContainer, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+          <Octicons name="search" size={20} color={colors.textSecondary} style={styles.inputIcon} />
           <TextInput
-            style={styles.input}
+            style={[styles.input, { color: colors.text }]}
             placeholder="Введите имя пользователя GitHub"
+            placeholderTextColor={colors.textSecondary}
             value={username}
             onChangeText={setUsername}
             autoCapitalize="none"
@@ -73,7 +79,11 @@ export default function SearchScreen() {
 
         {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-        <TouchableOpacity style={styles.searchButton} onPress={handleSearch} disabled={loading}>
+        <TouchableOpacity
+          style={[styles.searchButton, { backgroundColor: colors.primary }]}
+          onPress={handleSearch}
+          disabled={loading}
+        >
           {loading ? <ActivityIndicator color="#FFFFFF" /> : <Text style={styles.buttonText}>Поиск</Text>}
         </TouchableOpacity>
       </View>
@@ -84,7 +94,6 @@ export default function SearchScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5F5",
   },
   content: {
     flex: 1,
@@ -101,17 +110,16 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
-    color: "#333333",
   },
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#FFFFFF",
     borderRadius: 8,
     width: "100%",
     paddingHorizontal: 15,
     marginBottom: 15,
     elevation: 2,
+    borderWidth: 1,
   },
   inputIcon: {
     marginRight: 10,
@@ -122,7 +130,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   searchButton: {
-    backgroundColor: "#2196F3",
     borderRadius: 8,
     width: "100%",
     height: 50,
