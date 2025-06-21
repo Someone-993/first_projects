@@ -1,10 +1,14 @@
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, TextInput } from "react-native"
 import { Ionicons } from "@expo/vector-icons"
-import { router } from "expo-router"
+
+interface HomeScreenProps {
+  navigation: any
+}
 
 const categories = ["Business names", "Human names", "Game names", "Pet names", "Dish names", "Character names"]
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }: HomeScreenProps) {
+  console.log("HomeScreen");
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -31,7 +35,7 @@ export default function HomeScreen() {
               <TouchableOpacity
                 key={index}
                 style={styles.chip}
-                onPress={() => router.push({ pathname: "/chat", params: { category } })}
+                onPress={() => navigation.navigate("Chat", { category })}
               >
                 <Text style={styles.chipText}>{category}</Text>
               </TouchableOpacity>
