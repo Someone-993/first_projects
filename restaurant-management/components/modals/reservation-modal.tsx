@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -31,7 +31,30 @@ export function ReservationModal({ restaurant, onClose }: ReservationModalProps)
     specialRequests: "",
   })
   const [loading, setLoading] = useState(false)
+  const [tables, setTables] = useState<Array<{ id: number; seats: number }>>([])
+  const [tablesLoading, setTablesLoading] = useState(true)
   const { toast } = useToast()
+
+  // Fetch available tables
+  useEffect(() => {
+    const fetchTables = async () => {
+      try {
+        const response = await fetch("/api/tables/all")
+        if (response.ok) {
+          const data = await response.json()
+          setTables(data)
+        } else {
+          console.error("Failed to fetch tables")
+        }
+      } catch (error) {
+        console.error("Error fetching tables:", error)
+      } finally {
+        setTablesLoading(false)
+      }
+    }
+
+    fetchTables()
+  }, [])
 
   const timeSlots = [
     "11:00",
@@ -59,13 +82,6 @@ export function ReservationModal({ restaurant, onClose }: ReservationModalProps)
     "22:00",
   ]
 
-  const mockTables = [
-    { id: "1", number: 1, capacity: 2 },
-    { id: "2", number: 2, capacity: 4 },
-    { id: "4", number: 4, capacity: 2 },
-    { id: "5", number: 5, capacity: 8 },
-  ]
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -78,8 +94,7 @@ export function ReservationModal({ restaurant, onClose }: ReservationModalProps)
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
         body: JSON.stringify({
-          restaurantId: restaurant.id,
-          tableId: formData.tableId,
+          tableId: Number.parseInt(formData.tableId),
           date: formData.date,
           time: formData.time,
           guests: Number.parseInt(formData.guests),
@@ -94,12 +109,14 @@ export function ReservationModal({ restaurant, onClose }: ReservationModalProps)
         })
         onClose()
       } else {
-        throw new Error("Failed to create reservation")
+        const errorData = await response.json()
+        const errorMessage = errorData.message || "Failed to create reservation"
+        throw new Error(errorMessage)
       }
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to create reservation. Please try again.",
+        description: error instanceof Error ? error.message : "Failed to create reservation. Please try again.",
         variant: "destructive",
       })
     } finally {
@@ -178,9 +195,9 @@ export function ReservationModal({ restaurant, onClose }: ReservationModalProps)
                 <SelectValue placeholder="Select table" />
               </SelectTrigger>
               <SelectContent>
-                {mockTables.map((table) => (
-                  <SelectItem key={table.id} value={table.id}>
-                    Table {table.number} ({table.capacity} seats)
+                {tables.map((table) => (
+                  <SelectItem key={table.id} value={table.id.toString()}>
+                    Table {table.id} ({table.seats} seats)
                   </SelectItem>
                 ))}
               </SelectContent>

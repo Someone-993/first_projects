@@ -169,3 +169,4 @@ C:\Users\user\Desktop\Kursach\Kursach_v2\obj\Debug\net8.0\Kursach_v2.genruntimec
 C:\Users\user\Desktop\Kursach\Kursach_v2\obj\Debug\net8.0\ref\Kursach_v2.dll
 C:\Users\user\Desktop\Kursach\Kursach_v2\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\user\Desktop\Kursach\Kursach_v2\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\Kursach\Kursach_v2\obj\Debug\net8.0\Kursach_v2.sourcelink.json

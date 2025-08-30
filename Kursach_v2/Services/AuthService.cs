@@ -19,17 +19,25 @@ namespace Kursach_v2.Services
             _config = config;
         }
 
+        public async Task<bool> UserExistsByEmailAsync(string? email)
+        {
+            if (string.IsNullOrWhiteSpace(email)) return false;
+            return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
         public async Task<User?> RegisterAsync(RegisterDTO dto)
         {
+            if (string.IsNullOrWhiteSpace(dto.Email) || string.IsNullOrWhiteSpace(dto.Password) || string.IsNullOrWhiteSpace(dto.Name))
+                return null;
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 return null;
             var user = new User
             {
-                UserName = dto.Name,
-                Email = dto.Email,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                UserName = dto.Name ?? string.Empty,
+                Email = dto.Email ?? string.Empty,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password ?? string.Empty),
                 Role = string.IsNullOrEmpty(dto.Role) ? "Visitor" :
-                    (dto.Role.ToLower() == "admin" ? "Admin" :
+                    (dto.Role!.ToLower() == "admin" ? "Admin" :
                     (dto.Role.ToLower() == "super_admin" ? "SuperAdmin" : "Visitor"))
             };
             _context.Users.Add(user);
@@ -50,6 +58,7 @@ namespace Kursach_v2.Services
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.Role, user.Role)
             };

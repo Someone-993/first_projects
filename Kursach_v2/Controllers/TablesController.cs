@@ -22,6 +22,58 @@ namespace Kursach_v2.Controllers
             return Ok(tables);
         }
 
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAll()
+        {
+            var tables = await _context.Tables.ToListAsync();
+            return Ok(tables);
+        }
+
+        [HttpPost("seed-test-data")]
+        public async Task<IActionResult> SeedTestData()
+        {
+            try
+            {
+                // Check if we already have data
+                if (await _context.Tables.AnyAsync())
+                {
+                    return BadRequest("Test data already exists");
+                }
+
+                // Create a test restaurant if it doesn't exist
+                var restaurant = await _context.Restaurants.FirstOrDefaultAsync();
+                if (restaurant == null)
+                {
+                    restaurant = new Restaurant
+                    {
+                        Name = "Test Restaurant",
+                        Address = "123 Test Street",
+                        Description = "A test restaurant for development"
+                    };
+                    _context.Restaurants.Add(restaurant);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Create test tables
+                var testTables = new[]
+                {
+                    new Table { Seats = 2, RestaurantId = restaurant.Id },
+                    new Table { Seats = 4, RestaurantId = restaurant.Id },
+                    new Table { Seats = 6, RestaurantId = restaurant.Id },
+                    new Table { Seats = 8, RestaurantId = restaurant.Id }
+                };
+
+                _context.Tables.AddRange(testTables);
+                await _context.SaveChangesAsync();
+
+                return Ok(new { message = "Test data created successfully", tables = testTables });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Failed to create test data", error = ex.Message });
+            }
+        }
+
         [Authorize(Roles = "Admin,SuperAdmin")]
         [HttpPost]
         public async Task<IActionResult> Create(Table table)
